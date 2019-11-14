@@ -10,6 +10,7 @@ resource "google_compute_network" "vpc_network" {
 resource "google_storage_bucket" "terraform_state" {
   name          = "terraform_bkt"
   force_destroy = true
+  key=API_KEY
 }
 
 resource "google_compute_instance" "vm_instance" {
