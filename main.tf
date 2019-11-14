@@ -1,4 +1,5 @@
 provider "google" {
+  credentials = file("cred.json")
   project = "silent-thunder-256105"
   region  = "europe-west2"
   zone    = "europe-west2-a"
