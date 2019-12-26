@@ -1,14 +1,14 @@
 provider "google" {
-  project = "silent-thunder-256105"
+  project = "lyrical-shore-262101"
   region  = "europe-west2"
   zone    = "europe-west2-a"
 }
 resource "google_compute_network" "vpc_network" {
-  name = "terraform-network"
+  name = "my-network-Terraform"
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
+  name         = "vm-terraform-01"
   machine_type = "f1-micro"
 
   boot_disk {
