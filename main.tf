@@ -11,6 +11,7 @@ resource "google_compute_instance" "vm-instance" {
   name         = "test01"
   machine_type = "f1-micro"
   zone         = "us-east1-b"
+  tags = ["foo", "bar"]
 
   boot_disk {
     initialize_params {
